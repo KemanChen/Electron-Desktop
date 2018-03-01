@@ -3,6 +3,7 @@ import {Link, Route} from "react-router-dom";
 import style from "./style.scss";
 import {Button, message} from "antd";
 // import {io} from "socket.io";
+import $ from "jquery";
 import {_POINT_ACTION, _SET_COLOR_ACTION, _SET_STOKE_SIZE, _SET_SHAPE,_SET_TEXT,_SET_IMAGE} from "./constants";
 
 /**
