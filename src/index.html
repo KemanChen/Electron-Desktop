@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<base href="http://localhost:8080/www/">-->
+    <link rel="stylesheet" href="<%= webpackConfig.isProd ? '../node_modules/antd/dist/antd.min.css' : '../node_modules/antd/dist/antd.css' %>">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/socket.io-client/dist/socket.io.js"></script>
+    <script src="../node_modules/recorderjs/recorder.js"></script>
+    <script src="../node_modules/html2canvas/dist/html2canvas.js"></script>
+    <title>Title</title>
+</head>
+<body>
+    <div id="rootElement"></div>
+    <script src="<%= htmlWebpackPlugin.files.chunks.common.entry %>"></script>
+    <script src="<%= htmlWebpackPlugin.files.chunks.app.entry %>"></script>
+</body>
+</html>

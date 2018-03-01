@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "rootDir": "./",
+        "outDir": "../www",
+        "moduleResolution": "node",
+        "jsx": "react",
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true
+    },
+    "exclude": [
+        "../www",
+        "../node_modules"
+    ],
+    "include": [
+        "../node_modules/@types",
+        "./**/*"
+    ]
+}
